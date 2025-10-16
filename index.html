@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samuel Miracle's Profile Card Profile Card</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<script src="script.js"></script>
+
+<body>
+
+  <!-- Miracle's Picture -->
+  <article class="profile-card" data-testid="test-profile-card">
+    <header class="profile-header">
+      <figure class="profile-avatar-container">
+        <img src="Samuel-Miracle.jpg" alt="Samuel Miracle profile picture" class="profile-avatar"
+          data-testid="test-user-avatar" />
+      </figure>
+
+      <!-- Miracle's Information -->
+      <div class="profile-info">
+        <h1 class="profile-name" data-testid="test-user-name">Samuel Miracle</h1>
+        <p class="profile-bio" data-testid="test-user-bio">
+          Frontend developer passionate about developing web apps that solve real-world problems.
+          I love turning complex problems into elegant solutions through clean code and minimalistic design.
+        </p>
+        <p class="profile-time">
+          Current Time: <span data-testid="test-user-time" id="current-time">0</span>ms
+        </p>
+      </div>
+    </header>
+
+    <!-- Miracle's social media links -->
+    <nav aria-label="Social media links">
+      <ul class="social-links" data-testid="test-user-social-links">
+        <li>
+          <a href="https://github.com/mimidev247" target="_blank" rel="noopener noreferrer" class="social-link"
+            data-testid="test-user-social-github" aria-label="Visit Samuel Miracle's GitHub profile">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://x.com/SMC_MiDevs?t=TZkqrPxA6K87CS_CfoUnxg&s=08" target="_blank" rel="noopener noreferrer"
+            class="social-link" data-testid="test-user-social-twitter"
+            aria-label="Visit Samuel Miracle's Twitter profile">
+            <i class="fa-brands fa-twitter"></i> Twitter
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/miracle-samuel-507a0631b" target="_blank" rel="noopener noreferrer"
+            class="social-link" data-testid="test-user-social-linkedin"
+            aria-label="Visit Samuel Miracle's LinkedIn profile">
+            <i class="fa-brands fa-linkedin-in"></i> LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://mimidev247.github.io/myportfolio" target="_blank" rel="noopener noreferrer"
+            class="social-link" data-testid="test-user-social-website"
+            aria-label="Visit Samuel Miracle's portfolio website">
+            <i class="fa-solid fa-globe"></i> Website
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hobbies & Interests -->
+    <div class="content-grid">
+      <section class="content-section">
+        <h2 class="section-title">
+          <i class="fa-solid fa-thumbs-up"></i> Hobbies & Interests
+        </h2>
+        <ul class="section-list" data-testid="test-user-hobbies">
+          <li>Building projects and collaborating with others</li>
+          <li>Reading manga/manhwa</li>
+          <li>Listening to music</li>
+          <li>Watching anime</li>
+          <li>Reading sci-fi novels</li>
+        </ul>
+      </section>
+
+      <!-- Dislikes & Non-interests -->
+      <section class="content-section">
+        <h2 class="section-title">
+          <i class="fa-solid fa-thumbs-down"></i> Dislikes & Non-interests
+        </h2>
+        <ul class="section-list" data-testid="test-user-dislikes">
+          <li>Poorly documented code</li>
+          <li>My codes changed without prior notice</li>
+          <li>Unnecessary meetings</li>
+          <li>Unrelatable clients</li>
+          <li>Breaking changes without warnings</li>
+        </ul>
+      </section>
+    </div>
+  </article>
+</body>
+
+</html>
