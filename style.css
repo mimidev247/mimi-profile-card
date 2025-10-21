@@ -10,11 +10,50 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 3rem 1rem;
+    flex-direction: column;
+    padding: 1rem;
     color: #e2e8f0;
 }
+      .main-nav {
+        width: 100%;
+        background: rgba(15, 23, 42, 0.8);
+        backdrop-filter: blur(10px);
+        padding: 1rem;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+      }
 
+      .nav-container {
+        max-width: 56rem;
+        margin: 0 auto;
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+      }
+
+      .nav-link {
+        color: #94a3b8;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        transition: all 0.3s ease;
+      }
+
+      .nav-link:hover {
+        color: #e2e8f0;
+        background: rgba(59, 130, 246, 0.1);
+      }
+
+      .nav-link.active {
+        color: #3b82f6;
+        background: rgba(59, 130, 246, 0.1);
+      }
+
+      .nav-link:focus {
+        outline: 2px solid #3b82f6;
+        outline-offset: 2px;
+      }
 .profile-card {
     background: #334155;
     border-radius: 1.5rem;
